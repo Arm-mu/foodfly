@@ -1,0 +1,57 @@
+<ons-page id="home">
+    <ons-toolbar style="background-color: orange">
+        <div class="center">foodfly</div>
+    </ons-toolbar>
+    <ons-card>
+        <ons-list>
+            <ons-list-item tappable>
+                <label class="right">
+                    <ons-radio name="color" input-id="radio-1" checked></ons-radio>
+                </label>
+                <label for="radio-1" class="center">
+                    Delivery
+                </label>
+            </ons-list-item>
+            <ons-list-item tappable>
+                <label class="right">
+                    <ons-radio name="color" input-id="radio-2"></ons-radio>
+                </label>
+                <label for="radio-2" class="center">
+                    Pickup
+                </label>
+            </ons-list-item>
+        </ons-list>
+    </ons-card>
+
+    <ons-card style="background-color: orange">
+        <ons-list-header style="text-align: center; background-color: orange; font-weight: bold;">RECOMMENDED
+        </ons-list-header>
+        <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable item-width="130px"
+            class="recommended_list" id="recomcarousel"
+            style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+
+        </ons-carousel>
+    </ons-card>
+
+    <ons-card style="background-color: orange">
+        <ons-list-header style="background-color: orange; text-align: center; font-weight: bold;">FOOD CATEGORY</ons-list-header>
+        <ons-card style="text-align: center; font-weight: bold;">
+            <img src="lib/pic/icon1.png" style="width: 10%"><br>
+            ICE CREAM
+            <br>
+            <ons-button id="icecreamcatebtn" modifier="large">Select</ons-button>
+        </ons-card>
+        <ons-card style="text-align: center; font-weight: bold;">
+            <img src="lib/pic/icon2.png" style="width: 20%"><br>
+            CAKE
+            <br>
+            <ons-button id="cakecatebtn" modifier="large">Select</ons-button>
+        </ons-card>
+        <ons-card style="text-align: center; font-weight: bold;">
+            <img src="lib/pic/icon3.png" style="width: 20%"><br>
+            BREAD
+            <br>
+            <ons-button id="breadcatebtn" modifier="large">Select</ons-button>
+        </ons-card>
+    </ons-card>
+</ons-page>
