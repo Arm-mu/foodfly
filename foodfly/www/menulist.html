@@ -1,0 +1,37 @@
+<ons-page id="menulist">
+    <ons-toolbar style="background-color: orange">
+        <div class="center">foodfly</div>
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+    </ons-toolbar>
+    <ons-list-header style="text-align: center">RESTAURANT MENU</ons-list-header>
+    <ons-card class="card" style="text-align: center;background-color: orange">
+        <ons-card>
+            <p style="text-align: center">
+                <img id="respic" style="width: 60%">
+            </p>
+
+
+        </ons-card>
+        <div id="foods">
+                <ons-list >
+                        <ons-list-item expandable>
+                            <h1>
+                                <span >Cake</span>
+                            </h1>
+                            <div class="expandable-content">
+                                <ons-list-item style="background-color: orange">
+                                    German Chocolate<br>> 250.00 ฿
+                                    <p class="right" onclick="buy(250, 'German Chocolate')">
+                                        <ons-button>
+                                            +
+                                        </ons-button>
+                                    </p>
+                                </ons-list-item>
+                            </div>
+                        </ons-list-item>
+                    </ons-list>
+        </div>
+    </ons-card>
+</ons-page>
